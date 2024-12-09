@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="display-4"><strong>Password Guessing Challenge</strong></h1>
+        <p class="lead"><strong>Set a password and let your friends struggle!<strong></p>
+
+        <!-- Admin Password Input -->
+        <div id="adminPanel" class="card p-4 mb-4">
+            <h3>Set Your Secret Password</h3>
+            <input type="password" id="adminPassword" class="form-control mb-2" placeholder="Enter your secret password">
+            <button class="btn btn-primary" onclick="setPassword()">Set Password</button>
+            <p id="adminFeedback" class="mt-2 text-success"></p>
+        </div>
+
+        <!-- Game Area for Guessers -->
+        <div id="gameArea" class="d-none">
+            <h3 class="text-warning">Your friends are guessing...</h3>
+            <button class="btn btn-danger mb-3" onclick="simulateGuess()">Make a Guess</button>
+            <p id="hint" class="text-info"></p>
+            <p id="insult" class="text-danger font-weight-bold mt-3"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

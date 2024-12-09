@@ -1,0 +1,25 @@
+body {
+    background-image: url('https://img.freepik.com/premium-photo/pixel-playground-crafted-assets-your-game-world_931866-127012.jpg?w=740'); /* Example game mosaic background */
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif; 
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(53, 45, 45);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(255, 0, 170, 0.5);
+    font-weight: bold;
+}
+
+.btn-primary, .btn-danger {
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+.text-info, .text-danger {
+    font-size: 1.5em;
+}
